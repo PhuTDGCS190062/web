@@ -1,0 +1,14 @@
+{
+  "name": "web003",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web003.js",
+  "scripts": {
+    "start": "node web003.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

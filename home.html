@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style type="text/css">
+    h1 {
+      text-align: center;
+      border: 6px double black;
+      font-size: 40px;
+      margin: 0px 0px 10px 0px;
+    }
+    * {
+      margin: 0px 20px 0px 20px;
+      padding: 0;
+    }
+    #menu ul {
+      padding: 15px 10px;
+      list-style-type: none;
+      background: yellow;
+      border: 3px solid blue;
+      text-align: center;
+    }
+    #menu ul li {
+      color: #red;
+      display: inline-table;
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+    }
+    #menu ul li a {
+      color: red;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+    }
+    #menu ul li a:hover {
+      color: purple;
+    }
+    #tintuc {
+      margin: 20px 0;
+      border: 3px solid red;
+      background-color: yellow;
+    }
+    #ttnews ul li a {
+      text-decoration: none;
+    }
+    #ttnews ul li a:hover{
+      color: red;
+      font-size: 105%;
+    }
+    #sach {
+      margin: 20px 0;
+      border: 3px solid red;
+      background-color: yellow;
+    }
+    * {
+      box-sizing: border-box;
+      font-weight: 300;
+      line-height: 1.254;/* do cao cua moi dong chu */
+    }
+    body {
+      font-family: "Helvetica", "Arial", "sans-serif";
+    }
+    .row {
+      overflow: hidden;
+      margin: 1.5em auto;
+    }
+    .row .col {
+      float: left;
+      width: 29%;
+      margin-bottom: 40px;
+
+    }
+    .row .col img{
+      float: left;
+    }
+    #last {
+      font-size: 85%;
+      border-top: 1px solid #e6e6e6;
+      color: #838383;
+      padding: 1em 3em;
+    }
+    .timhieuthem a {
+      text-decoration: none;
+      color: blue;
+    }
+    body {
+      background-image: url('https://tophinhnen.com/wp-content/uploads/2018/04/background-powerpoint-chuyen-nghiep-19.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+    <title> Online library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <h1> <img src="logo.png" width="80px" height="auto">Online Library </h1>
+    <div id="menu">
+      <ul>
+      <li> <a href="sachmoi.html">Sách mới </a></li>
+      <li> <a href="homenews.html">Tin Tức</a></li>
+      <li> <a href="dacsach.html">Đặc sách </a></li>
+      <li> <a href="question.html">Hỏi đáp </a></li>
+      <li> <a href="dangky.html">Đăng Ký </a></li>
+      <li> <a href="login.html">Đăng Nhập </a></li>
+      </ul>
+      <marquee> <i>Chỉ nên coi việc đọc sách là sự gợi ý, sự nhắc nhở nhận từ những người thông thái từng trải, tựa hồ trái táo của Adam Eva kích thích sự sống phát triển.</i></marquee>
+    </div>
+  <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.teahub.io/photos/full/190-1905135_background-images-of-books.png" style="width:100%">
+  <img class="mySlides" src="https://ak.picdn.net/shutterstock/videos/6307535/thumb/1.jpg" style="width:100%">
+  <img class="mySlides" src="https://ak.picdn.net/shutterstock/videos/4773473/thumb/10.jpg" style="width:100%">
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <div id="tintuc">
+      <p> <img src="https://cdn0.iconfinder.com/data/icons/simplicity/512/news_article_blog-512.png" width="30px" height="auto">News </p>
+    </div>
+    <div id="ttnews">
+      <ul>
+      <li> <a href="news1.html"> HÃY ỦNG HỘ TỦ SÁCH TUỔI HOA </a> </li>
+      <li> <a href="news2.html"> NHÀ VĂN NGUYỄN THỊ THỤY VŨ SAU GẦN 50 NĂM ẨN DẬT </a> </p>
+      <li> <a href="news3.html"> GIAO LƯU CÙNG NHÀ VĂN NỔI TIẾNG TRƯỚC 1975 – THỤY VŨ </a> </p>
+      <li> <a href="news4.html"> 'BÔNG HOA ĐỎ': TINH HOA TRUYỆN NGẮN CỦA V.M. GARSHIN </a> </p>
+      <li> <a href="news5.html"> 'NHỮNG MẢNH MẮT NHÌN' HAY CÁI TỰ RỌI SÂU SẮC CỦA CÂY BÚT 9X? </a> </p>
+      <li> <a href="news6.html"> NGUYỄN THỊ THUỴ VŨ – NGƯỜI VẼ CHÂN DUNG CON NGƯỜI TRONG THỜI LOẠN LY GIÔNG BÃO </a> </p>
+      <li> <a href="http://phuongnambook.com.vn/book_point.php"> More...</a> </li>
+      </ul>
+    </div>
+    <div id="sach">
+      <p> <img src="https://image.flaticon.com/icons/png/512/46/46271.png" width="30px" height="auto">Books </p>
+    </div>
+    <div class="row" id="intro">
+      <div id="book1" class="col">
+        <h2 id="editbook"> Đắc Nhân Tâm </h2>
+        <img src="https://salt.tikicdn.com/cache/w780/media/catalog/product/d/a/dacnhantam_2.jpg" width="200px" height="auto" />
+        <p>Đây là quyển sách duy nhất về thể loại self-help liên tục đứng đầu danh mục sách bán chạy nhất (best-selling Books) do báo The New York Times bình chọn suốt 10 năm liền. Riêng bản tiếng Anh của sách đã bán được hơn 15 triệu bản trên thế giới. Tác phẩm có sức lan toả vô cùng rộng lớn – dù bạn đi đến bất cứ nơi đâu, bất kỳ quốc gia nào cũng đều có thể nhìn thấy. Tác phẩm được đánh giá là quyển sách đầu tiên và hay nhất, có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới.</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="dacnhantam.html">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book2" class="col">
+        <h2 id="editbook"> Lịch sử vạn vật </h2>
+        <img src="https://300b5338.vws.vegacdn.vn/image/img.media/A%20Short%20History%20of%20Nearly%20Everything%20-%20L%C6%B0%E1%BB%A3c%20s%E1%BB%AD%20v%E1%BA%A1n%20v%E1%BA%ADt.jpg" width="200px" height="auto" />
+        <p>Trong cuốn Lịch Sử Vạn Vật,tìm hiểu – và nếu có thể trả lời – những vấn đề to lớn nhất, xa xưa nhất mà chúng ta đặt ra về vũ trụ và bản thân con người. Từ Big Bang cho đến sự xuất hiện của nền văn minh, Bryson tìm hiểu tại sao chúng ta biến đổi từ cái hư vô thành cái có thực, loài người xuất hiện như thế nào. Để làm được điều này, ông phải dày công tìm đến các nhà khoa học nổi tiếng nhất thế giới thuộc các ngành: khảo cổ học, cổ sinh vật học, vật lý học, thiên văn học, nhân loại học, toán học; tại các văn phòng, trạm và phòng thí nghiệm của họ. Đây là cuộc hành trình thú vị nhất trong lĩnh vực kiến thức nhân loại và chỉ Bill Bryson mới có thể làm được điều này.</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book3" class="col">
+        <h2 id="editbook">Đọc vị bất ai </h2>
+        <img src="https://www.sachhayonline.com/book/uploads/images/2019/10/30/19/sach-doc-vi-bat-ky-ai_600x960.gif" width="200px" height="auto" />
+        <p>Hãy chiếm thế thượng phong trong việc chủ động nhận biết điều cần tìm kiếm - ở bất kỳ ai bằng cách “thâm nhập vào suy nghĩ” của người khác. ĐỌC VỊ BẤT KỲ AI là cẩm nang dạy bạn cách thâm nhập vào tâm trí của người khác để biết điều người ta đang nghĩ. Cuốn sách này sẽ không giúp bạn rút ra các kết luận chung về một ai đó dựa vào cảm tính hay sự võ đoán. Những nguyên tắc được chia sẻ trong cuốn sách này không đơn thuần là những lý thuyết hay mẹo vặt chỉ đúng trong một số trường hợp hoặc với những đối tượng nhất định.Cách thức phân tích và tìm hiểu tính cách một cách bài bản trong phạm vi cho phép mà không làm mếch lòng đối tượng được phân tích..</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book4" class="col">
+        <h2 id="editbook"> Từ tốt đến vĩ đại </h2>
+        <img src="https://freetuts.net/upload/review_homework/images/2019/11/10/202/tu-tot-voi-vi-dai.gif" width="200px" height="auto" />
+        <p>Jim Collins cùng nhóm nghiên cứu đã miệt mài nghiên cứu những công ty có bước nhảy vọt và bền vững để rút ra những kết luận sát sườn. Đó là những yếu tố khả năng lãnh đạo, con người, văn hóa, kỷ luật, công nghệ… Những yếu tố này được nhóm nghiên cứu xem xét tỉ mỉ và kiểm chứng cụ thể qua 11 công ty nhảy vọt lên vĩ đại. Mỗi kết luận của nhóm nghiên cứu đều hữu ích, vượt thời gian, ý nghĩa vô cùng to lớn đối với mọi lãnh đạo và quản lý ở mọi loại hình công ty, và mọi lĩnh vực ngành nghề. Đây là cuốn sách nên đọc đối với bất kỳ lãnh đạo hay quản lý nào!</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book5" class="col">
+        <h2 id="editbook"> Đời ngắn đừng ngủ dày </h2>
+        <img src="https://f2.hcm.edu.vn/UploadImages/thdongdaq4/2020_4/rs3.jpg?w=1000" width="200px" height="auto" />
+        <p>Mọi lựa chọn đều giá trị. Mọi bước đi đều quan trọng. Cuộc sống vẫn diễn ra theo cách của nó, không phải theo cách của ta. Hãy kiên nhẫn. Tin tưởng. Hãy giống như người thợ cắt đá, đều đặn từng nhịp, ngày qua ngày. Cuối cùng, một nhát cắt duy nhất sẽ phá vỡ tảng đá và lộ ra viên kim cương. Người tràn đầy nhiệt huyết và tận tâm với việc mình làm không bao giờ bị chối bỏ. Sự thật là thế.</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book6" class="col">
+        <h2 id="editbook"> Bài giản cuối cùng </h2>
+        <img src="https://300b5338.vws.vegacdn.vn/image/img.media/The%20Last%20Lecture%20-%20B%C3%A0i%20gi%E1%BA%A3ng%20cu%E1%BB%91i%20c%C3%B9ng.jpg" width="200px" height="auto" />
+        <p>“Chúng ta không đổi được những quân bài đã chia, chỉ có thể đổi cách chơi những quân bài đó.” Randy Pausch.
+
+Thực tế, đã có nhiều giáo sư được mời thuyết trình “Bài giảng cuối cùng” trước khi chia tay giảng đường. Khi đó họ thường chia sẻ về những thất bại cũng như những tinh hoa rút tỉa từ cuộc đời và sự nghiệp của mỗi cá nhân. Trong khi nghe thuyết trình, cử tọa bao giờ cũng day dứt trước câu hỏi: Giả như đây là cơ hội cuối cùng thì ta có thể gửi gắm thông điệp gì đến mọi người? Nếu ngày mai phải ra đi thì ta muốn cái gì sẽ là di sản để lại cho đời?</p>
+<p class="timhieuthem">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+</p>
+      </div>
+      <div id="book7" class="col">
+        <h2 id="editbook"> Khúc cầu hồn </h2>
+        <img src="https://salt.tikicdn.com/cache/w300/media/catalog/product/i/m/img277_1.jpg" width="200px" height="auto" />
+        <p>Khi người em gái song sinh bị bắt cóc, Johnny Merrimon mới mười hai tuổi. Giờ đây, sau một năm, người ta phỏng đoán cô bé đã chết. Quá thương xót con gái, bà mẹ Johnny trở nên kiệt quệ và vô hồn như một cái bóng, cha Johnny không rõ vì sao đã bỏ mẹ con cậu đi xa, không trở về nữa. Và cuộc sống của Johnny chẳng bao giờ được như xưa ...</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book8" class="col">
+        <h2 id="editbook"> Hỏa ngục </h2>
+        <img src="https://violetsky.net/wp-content/uploads/2019/07/image3.jpg" width="200px" height="auto" />
+        <p>Tiếp nối thành công của những cuốn sách bom tấn mang tầm quốc tế như Mật Mã Da Vinci, Thiên Thần Và Ác Quỷ, Biểu Tượng Thất Truyền, tác phẩm mới  nhất của Dan Brown mang tên " Hỏa Ngục - Inferno" vừa được xuất bản đã trở thành cuốn sách bán chạy nhất năm 2013 tại Mỹ  và Anh.</p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+      <div id="book9" class="col">
+        <h2 id="editbook"> Phí lý trí </h2>
+        <img src="https://cafefcdn.com/2018/photo-0-1515146977878.png" width="200px" height="auto" />
+        <p>Tại sao chúng ta luôn tự hứa là sẽ ăn kiêng để rồi ý nghĩ ấy vụt biến ngay khi chiếc xe chở đồ tráng miệng đi qua? Tại sao đôi khi chúng ta hào hứng mua sắm những thứ không thật sự cần đến? Tại sao chúng ta vẫn cảm thấy đau đầu sau khi dùng loại aspirin có giá 1 xu nhưng cơn đau đầu ấy lại biến mất nếu thuốc đó đắt gấp 50 lần? Tại sao những tín đồ được yêu cầu nhớ lại Mười điều răn của Chúa có xu hướng thành thật (ít nhất là ngay sau đó) hơn những người không được yêu cầu làm vậy? </p>
+        <p class="timhieuthem">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg><a href="#">Xem thêm</a>
+        </p>
+      </div>
+    </div>
+  <div id="last">
+    <p> Copyright @copy; 2020 http://www.phuongnambook.com.vn/ </p>
+  </div>
+  </body>
+</html>
